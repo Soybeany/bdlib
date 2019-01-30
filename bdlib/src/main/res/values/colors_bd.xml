@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--*****基础颜色*****-->
+    <color name="colorBlack">@android:color/black</color>
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorLightBlue">#0099CC</color>
+    <color name="colorBlue">#1ea1cf</color>
+    <color name="colorRed">#FF00</color>
+    <color name="colorLightGray">#D7D4D4</color>
+    <color name="colorGreen">#00af00</color>
+    <color name="colorYellow">#ffff00</color>
+    <color name="colorGray">#bbb</color>
+    <color name="colorDarkerGray">@android:color/darker_gray</color>
+    <color name="colorBackgroundMaterialLight">#fffafafa</color>
+    <color name="colorTextMaterialLight">@color/abc_primary_text_material_light</color>
+
+    <!--*****透明颜色*****-->
+    <color name="colorTransWhite9">#9fff</color>
+    <color name="colorTransWhiteD">#dfff</color>
+    <color name="colorTransWhite50">#50FFFFFF</color>
+    <color name="colorTransGray9">#99D7D4D4</color>
+
+
+    <!--*****控件颜色*****-->
+
+    <!--工具栏-->
+    <color name="colorToolbarPrimary">@color/colorWhite</color>
+    <color name="colorToolbarSecondary">@color/colorWhite</color>
+
+    <!--溢出菜单-->
+    <color name="colorToolbarPopupBackground">@color/colorBackgroundMaterialLight</color>
+    <color name="colorToolbarPopupText">@color/colorTextMaterialLight</color>
+    <color name="toolBar">#FF4081</color>
+
+</resources>

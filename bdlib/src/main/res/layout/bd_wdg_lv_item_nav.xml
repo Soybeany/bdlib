@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View style="@style/SeparatorStyle"/>
+
+    <TextView
+        android:id="@+id/bd_lv_item_nav_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:layout_marginTop="@dimen/dimen_normal"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?attr/listPreferredItemPaddingRight"
+        android:singleLine="true"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/text_huge_ex"/>
+
+</LinearLayout>

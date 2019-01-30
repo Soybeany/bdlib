@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Layout-->
+    <item name="bd_layout_container" type="id"/>
+    <item name="bd_layout_content" type="id"/>
+
+    <!--Appbar-->
+    <item name="bd_appbar" type="id"/>
+
+    <!--Toolbar-->
+    <item name="bd_toolbar" type="id"/>
+    <item name="bd_toolbar_title" type="id"/>
+    <item name="bd_toolbar_subtitle" type="id"/>
+    <item name="bd_toolbar_title_img" type="id"/>
+    <item name="bd_toolbar_custom" type="id"/>
+
+</resources>

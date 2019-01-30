@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--取消系统自带的活动栏-->
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <!--兼容库高于22.1时使用-->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--完全透明主题，用于隐式动态跳转界面-->
+    <style name="TranslucentTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--工具栏样式-->
+    <style name="ToolbarStyle">
+        <item name="android:id">@id/bd_toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <!--<item name="contentInsetStart">0dp</item>-->
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+    </style>
+
+    <!--工具栏标题样式-->
+    <style name="ToolbarTitleStyle">
+        <item name="android:id">@id/bd_toolbar_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorToolbarPrimary</item>
+        <item name="android:textSize">@dimen/text_huge_ex</item>
+        <!--需要注意,默认隐藏,免得不使用时影响布局-->
+        <!--<item name="android:visibility">gone</item>-->
+    </style>
+
+    <!--工具栏副标题样式-->
+    <style name="ToolbarTitleStyle.subtitle">
+        <item name="android:id">@id/bd_toolbar_subtitle</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--工具栏主题-->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--工具栏主体颜色-->
+        <item name="android:textColorPrimary">@color/colorToolbarPrimary</item>
+        <!--副标题颜色-->
+        <item name="android:textColorSecondary">@color/colorToolbarSecondary</item>
+        <!--菜单项文字样式-->
+        <item name="android:actionMenuTextAppearance">@style/MenuTextAppearance</item>
+    </style>
+
+    <!--菜单项文字样式-->
+    <style name="MenuTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--溢出窗口主题-->
+    <style name="ToolbarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!--禁止遮盖-->
+        <item name="overlapAnchor">false</item>
+        <!--菜单背景-->
+        <item name="android:colorBackground">@color/colorToolbarPopupBackground</item>
+        <!--菜单文本颜色-->
+        <item name="android:textColor">@color/colorToolbarPopupText</item>
+    </style>
+
+    <!--Appbar布局的风格-->
+    <style name="AppbarLayoutStyle">
+        <item name="android:id">@id/bd_appbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:theme">@style/ToolbarTheme</item>
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/dimen_micro</item>
+    </style>
+
+    <!--工具栏标题图片样式-->
+    <style name="ToolbarTitleImgStyle">
+        <item name="android:id">@id/bd_toolbar_title_img</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/dimen_normal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_normal</item>
+    </style>
+
+</resources>

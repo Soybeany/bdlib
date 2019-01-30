@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeightSmall"
+    android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+    android:paddingRight="?attr/listPreferredItemPaddingRight">
+
+    <TextView
+        android:id="@+id/bd_lv_item_nav_child_name_tv"
+        style="@style/DetailTextViewStyle"
+        android:drawablePadding="@dimen/dimen_huge_ex"
+        android:ems="10"
+        android:gravity="start"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/text_huge"/>
+
+    <TextView
+        android:id="@+id/bd_lv_item_nav_child_badge_tv"
+        style="@style/DetailTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/text_huge"/>
+
+</LinearLayout>
+

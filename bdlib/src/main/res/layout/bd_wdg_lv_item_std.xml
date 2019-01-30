@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/img_big"
+            android:layout_marginBottom="@dimen/dimen_big"
+            android:layout_marginTop="@dimen/dimen_big"/>
+
+        <ImageView
+            android:id="@+id/bd_lv_item_std_icon_iv"
+            android:layout_width="@dimen/img_big"
+            android:layout_height="@dimen/img_big"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_big"/>
+
+        <TextView
+            android:id="@+id/bd_lv_item_std_text_tv"
+            style="@style/DetailTextViewStyle"
+            android:layout_marginLeft="@dimen/dimen_big"
+            android:maxEms="10"
+            android:text="测试文本"
+            android:textSize="@dimen/text_huge"/>
+
+        <TextView
+            android:id="@+id/bd_lv_item_std_badge_tv"
+            style="@style/BadgeNumStyle"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:text="99+"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bd_lv_item_std_arrow_iv"
+        android:layout_width="@dimen/img_big"
+        android:layout_height="@dimen/img_big"
+        android:layout_gravity="center"
+        android:src="@drawable/bd_ic_chevron_right"/>
+
+</LinearLayout>

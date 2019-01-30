@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bd_sl_bg2ck_p2trans2gray"
+              android:focusable="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bd_lv_item_load_more_content_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/dimen_normal">
+
+        <ProgressBar
+            android:id="@+id/bd_lv_item_load_more_progress_pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="@dimen/text_huge_ex"
+            android:layout_height="@dimen/text_huge_ex"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/bd_lv_item_load_more_desc_tv"
+            style="@style/DetailTextViewStyle"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:text="测试..."
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_huge"/>
+
+    </LinearLayout>
+
+</LinearLayout>

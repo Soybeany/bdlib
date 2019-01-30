@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/bd_tb_container_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        style="@style/SeparatorStyle"
+        android:background="@color/LightGrey"/>
+
+    <LinearLayout
+        android:id="@+id/bd_tb_container_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_micro"
+        android:paddingTop="@dimen/dimen_micro">
+
+    </LinearLayout>
+
+</LinearLayout>

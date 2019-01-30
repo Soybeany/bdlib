@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout style="@style/AppbarLayoutStyle">
+
+    <android.support.v7.widget.Toolbar style="@style/ToolbarStyle"/>
+
+</android.support.design.widget.AppBarLayout>

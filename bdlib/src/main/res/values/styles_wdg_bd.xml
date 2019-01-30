@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--需要正常尺寸的ImageView样式-->
+    <style name="ImageStyle">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <!--抢焦点用的样式-->
+    <style name="GetFocusStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <!--占位用弹簧的样式-->
+    <style name="SpringStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--占位用垂直弹簧的样式-->
+    <style name="SpringVerticalStyle">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--分隔线-->
+    <style name="SeparatorStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:listDivider</item>
+    </style>
+
+    <!-- 垂直分隔线 -->
+    <style name="VerticalSeparatorStyle">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:listDivider</item>
+    </style>
+
+    <!--导航抽屉的样式-->
+    <style name="NavigationViewStyle">
+        <item name="android:id">@id/bd_navigation_view</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">@dimen/dimen_micro</item>
+    </style>
+
+    <!--标准列表的样式-->
+    <style name="StandardListViewStyle">
+        <item name="android:id">@id/bd_std_lv</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bd_sh_bg_white_border</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!--详情展示的字体风格-->
+    <style name="DetailTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/colorLightGray</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--表格列表专用的详情展示的字体风格-->
+    <style name="DetailTextViewStyleForTableLayout">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorLightGray</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <!--横向进度条风格-->
+    <style name="ProgressHorizontalStyle" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:background">@drawable/bd_ll_pbar2hor_blue</item>
+        <item name="android:progressDrawable">@drawable/bd_ll_pbar2hor_blue</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">@dimen/progressbar_height_normal</item>
+        <item name="android:maxHeight">@dimen/progressbar_height_normal</item>
+    </style>
+
+    <!--图片列表项风格-->
+    <style name="ImageItemStyle">
+        <item name="android:layout_width">@dimen/img_normal_cover</item>
+        <item name="android:layout_height">@dimen/img_normal_cover</item>
+        <item name="android:background">@drawable/bd_sl_bg2ck_p2trans2gray</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/dimen_normal</item>
+    </style>
+
+    <!--图片列表项(大)风格-->
+    <style name="ImageItemBigStyle" parent="ImageItemStyle">
+        <item name="android:layout_width">@dimen/img_big_cover</item>
+        <item name="android:layout_height">@dimen/img_big_cover</item>
+    </style>
+
+    <!--自定义按钮样式-->
+    <style name="CustomButtonStyle" parent="DetailTextViewStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/dimen_big</item>
+        <item name="android:paddingBottom">@dimen/dimen_big</item>
+        <item name="android:background">@drawable/bd_sl_btn_blue</item>
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/dimen_micro</item>
+    </style>
+
+    <!--数字角标样式-->
+    <style name="BadgeNumStyle" parent="DetailTextViewStyle">
+        <item name="android:layout_width">@dimen/size_badge</item>
+        <item name="android:layout_height">@dimen/size_badge</item>
+        <item name="android:background">@drawable/bd_sh_bdg2oval_red</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--点角标样式-->
+    <style name="BadgeDotStyle">
+        <item name="android:layout_width">@dimen/dimen_normal</item>
+        <item name="android:layout_height">@dimen/dimen_normal</item>
+        <item name="android:background">@drawable/bd_sh_bdg2oval_red</item>
+    </style>
+
+</resources>

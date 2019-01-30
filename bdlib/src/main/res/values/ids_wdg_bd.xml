@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--NavigationView-->
+    <item name="bd_navigation_view" type="id"/>
+
+    <!--StandardListView-->
+    <item name="bd_std_lv" type="id"/>
+    <item name="bd_std_lv_hint" type="id"/>
+
+    <!--WebView-->
+    <item name="bd_web_view" type="id"/>
+    <item name="bd_web_view_hint" type="id"/>
+
+</resources>

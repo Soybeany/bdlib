@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/bd_view_hint_container_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dimen_normal"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_micro"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bd_view_hint_desc_tv"
+            style="@style/DetailTextViewStyle"
+            android:text="显示错误信息"
+            android:textColor="@color/colorDarkerGray"
+            android:textSize="@dimen/text_huge"/>
+
+        <Button
+            android:id="@+id/bd_view_hint_refresh_btn"
+            style="@style/DetailTextViewStyle"
+            android:text="刷新页面"/>
+    </LinearLayout>
+
+</merge>
